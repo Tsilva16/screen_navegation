@@ -14,6 +14,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        ElevatedButton(onPressed: () {
+          Navigator.pushNamed(context, 'third');
+        }, 
+        child: Text('Tela 3')
+        ),
         Container(
           color: Colors.blue,
           child: ElevatedButton(
